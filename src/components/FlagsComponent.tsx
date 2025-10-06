@@ -13,8 +13,9 @@ const Flag = ({name, color1, color2, color3, horizontal}: FlagProps) => {
       <div className={`flex ${horizontal ? "flex-col" : "flex-row"}
       w-69 h-60 border border-gray-300`}>
         <div className={`${horizontal ? "h-1/3 w-full" : "w-1/3 h-full"} ${color1}`}>
-
         </div>
+        <div className={`${horizontal ? "h-1/3 w-full" : "w-1/3 h-full"} ${color2}`}></div>
+        <div className={`${horizontal ? "h-1/3 w-full" : "w-1/3 h-full"} ${color3}`}></div>
       </div>
     </div>
   );
